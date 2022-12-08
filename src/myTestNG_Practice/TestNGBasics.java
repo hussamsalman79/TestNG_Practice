@@ -39,6 +39,12 @@ public class TestNGBasics {
 		Assert.assertTrue(flag); 
 	}
 	
+	@Test(priority=3)
+	public void verifyFreeCRMLLogoTest1() {
+		boolean flag = driver.findElement(By.xpath("//a[@class='navbar-brand']")).isDisplayed(); 
+		Assert.assertTrue(flag); 
+	}
+	
 	
 
 	@AfterMethod
